@@ -2,14 +2,15 @@
 
 ## 📌 Project Overview
 
-This project uses **MySQL** to clean and analyse a dataset containing information about company layoffs.
+This project uses **SQL** to clean, standardize, and analyse company layoff data.
 
-The project is divided into two stages:
+The project is divided into two main parts:
 
-1. **Data Cleaning** — identify and remove duplicate records, standardise inconsistent data, handle missing values, and remove unnecessary records and columns.
-2. **Exploratory Data Analysis (EDA)** — analyse layoff trends by company, industry, country, year, company stage, and time period.
+**1. Data Cleaning** – identify and remove duplicate records, standardize inconsistent data, handle missing values, convert data types, and remove unusable records.
 
-The project demonstrates how raw data can be transformed into a structured dataset suitable for further analysis.
+**2. Exploratory Data Analysis (EDA)** – analyse layoff trends across companies, industries, countries, years, company stages, and funding levels.
+
+The project demonstrates how SQL can be used to transform a raw dataset into a cleaner and more reliable dataset for analysis.
 
 ---
 
@@ -26,6 +27,24 @@ The main objectives of this project were to:
 * Explore patterns and trends in company layoffs
 * Use SQL aggregation and window functions to analyse the data
 * Calculate rolling totals and yearly rankings
+
+---
+## Dataset Description
+The dataset contains information about **company layoffs**, including the number and percentage of employees laid off, the companies and industries affected, and other company characteristics.
+
+### Variables
+
+| Variable                | Description                                             |
+| ----------------------- | ------------------------------------------------------- |
+| `company`               | Name of the company                                     |
+| `location`              | Location of the company                                 |
+| `industry`              | Industry in which the company operates                  |
+| `total_laid_off`        | Total number of employees laid off                      |
+| `percentage_laid_off`   | Percentage of the company's workforce that was laid off |
+| `date`                  | Date of the layoff                                      |
+| `stage`                 | Company's funding/development stage                     |
+| `country`               | Country where the company is located                    |
+| `funds_raised_millions` | Total funding raised by the company, in millions        |
 
 ---
 # 🧹 Part 1 — Data Cleaning
